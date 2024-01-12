@@ -136,4 +136,9 @@ Localhost - for loacal Development
     Stage - Stable code -  http://www.addidas.stage.com
 
     Production  - http://www.addidas.com - Live
-
+<Col>
+          {loginForm.length > 0 &&
+            loginForm.map((each) => {
+              return <Form params={each} />;
+            })}
+        </Col>

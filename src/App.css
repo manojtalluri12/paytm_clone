@@ -35,6 +35,9 @@ ul {
   padding: 18px;
   margin-right: 5px;
 }
+.images {
+  height: 400px;
+}
 /* signIn button*/
 .btnSignIn {
   width: 15%;
