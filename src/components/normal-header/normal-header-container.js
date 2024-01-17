@@ -3,6 +3,7 @@ import NormalHeader from './normalHeader-component'
 
 const NormalHeaderContainer = () => {
   const [menuItem, setMenuItem] = useState([])
+  const [showModal,setShowModal]=useState(false)
   useEffect(() => {
     fetch("./response/navlinks.json")
       .then((res) => res.json())
@@ -12,8 +13,17 @@ const NormalHeaderContainer = () => {
       });
     console.log(menuItem);
   }, []);
+  const signInClickHandler=()=>{
+    console.log("hello ");
+    setShowModal(!showModal)
+  }
+  const closeModalHandler=()=>{
+    setShowModal(false)
+  }
+
   return (
-    <div><NormalHeader menuItem={menuItem}/></div>
+    <div><NormalHeader menuItem={menuItem} signInClickHandler={signInClickHandler}
+    showModal={showModal} closeModalHandler={closeModalHandler}/></div>
   )
 }
 
