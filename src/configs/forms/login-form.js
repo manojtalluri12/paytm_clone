@@ -7,24 +7,8 @@ export const loginForm = [
   },
   {
     type: "password",
-    label: "password",
+    label: "Password",
     name: "password",
-    id: "username",
+    id: "password",
   },
-  {
-    type: "select",
-    label: "password",
-    name: "password",
-    id: "username",
-    option:[
-        {
-            value:"1",
-            label:"ONE"
-        },
-        {
-            value:"2",
-            label:"TWO"
-        },
-    ]
-  },
-];
+]
